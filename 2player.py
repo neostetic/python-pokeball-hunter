@@ -148,7 +148,7 @@ while run:
     my_font = pygame.font.SysFont('Comic Sans MS', 30)
     my_font2 = pygame.font.SysFont('Comic Sans MS', 64)
     img = pygame.image.load("mouse.png").convert_alpha()
-    img = pygame.transform.scale(img, (32, 32))
+    img = pygame.transform.scale(img, (16*scaler/2, 16*scaler/2))
     text_player1 = my_font.render(f'Player1: {player1points}', False, (255, 0, 0))
     text_player2 = my_font.render(f'Player2: {player2points}', False, (0, 0, 255))
     text_info = my_font.render("press 'Enter' to restart", True, (64, 64, 64))
